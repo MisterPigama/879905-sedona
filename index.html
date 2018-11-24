@@ -76,37 +76,45 @@
             </p>
             <a href="form.html" class="button-to-popup">поиск гостиницы в седоне</a>
         </section>
-        <div class="popup">
-            <form class="search" action="hotels.html" method="post">
-                <label for="date-in">Дата заезда:</label>
-                <input type="date" value="Дата заезда" id="date-in" required>
-                <button id="date-in">Календарик</button>
-                <label for="date-out">Дата выезда:</label>
-                <input type="date" value="Дата выезда" id="date-out" required>
-                <button id="date-out">Календарик</button>
-                <label for="old">Взрослые:</label>
-                <button id="old">Кнопка уменьшения</button>
-                <input type="number" value="Количество взрослых" id="old" min="1" step="1" required>
-                <button id="old">Кнопка увеличения</button>
-                <label for="children">Дети:</label>
-                <button id="old">Кнопка уменьшения</button>
-                <input type="number" value="Количество детей" id="children" min="0" step="1" required>
-                <button id="old">Кнопка увеличения</button>
-                <a href="hotels.html" class="find">Найти</a>
+        <section class="popup">
+            <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                <p>
+                    <label for="date-in">Дата заезда:</label>
+                    <input type="text" value="Дата заезда" id="date-in" required>
+                </p>
+                <p>
+                    <button class="date-in">Календарик</button>
+                    <label for="date-out">Дата выезда:</label>
+                </p>
+                <p>
+                    <input type="text" value="Дата выезда" id="date-out" required>
+                    <button class="date-out">Календарик</button>
+                </p>
+                <p>
+                    <label for="old">Взрослые:</label>
+                    <button class="smaller-men">Кнопка уменьшения</button>
+                    <input type="number" value="Количество взрослых" id="old" min="1" step="1" required>
+                    <button class="bigger-men">Кнопка увеличения</button>
+                    <label for="children">Дети:</label>
+                    <button class="smaller-children">Кнопка уменьшения</button>
+                    <input type="number" value="Количество детей" id="children" min="0" step="1" required>
+                    <button class="bigger-children">Кнопка увеличения</button>
+                </p>
+                <button class="find">Найти</button>
             </form>
-        </div>
-        <div class="map"><!--    тут будет карта --></div>
+        </section>
+        <section class="map"><!--    тут будет карта --></section>
     </main>
     <footer>
         <p class="hashtag">#visitsedona</p>
         <p class="social">
-            <a href="twitter.com" class="twitter">Twitter</a>
-            <a href="fb.com" class="fb">Facebook</a>
-            <a href="youtube.com" class="youtube">Youtube</a>
+            <a href="twitter.com" class="twitter" aria-label="Седона в твиттере">Twitter</a>
+            <a href="fb.com" class="fb" aria-label="Седона на фейсбуке">Facebook</a>
+            <a href="youtube.com" class="youtube" aria-label="Седона на ютубе">Youtube</a>
         </p>
         <p class="academy-logo">
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML-академия, интенсив">
                 <img src="img/logo-name.svg" alt="логотип академии" width="115" height="41">
             </a>
         </p>
