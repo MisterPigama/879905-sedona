@@ -7,7 +7,7 @@
   <body>
 <!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
       <header class="main-header">
-          <h1>Sedona</h1>
+          <h1 class="visually-hidden">Sedona</h1>
           <nav class="header-navigation">
               <a class="logo">
                 <img src="img/logo.svg" width="140" height="71" alt="Седона">
@@ -76,7 +76,25 @@
             </p>
             <a href="form.html" class="button-to-popup">поиск гостиницы в седоне</a>
         </section>
-        <div class="popup"><!-- а тут попап --></div>
+        <div class="popup">
+            <form class="search" action="hotels.html" method="post">
+                <label for="date-in">Дата заезда:</label>
+                <input type="date" value="Дата заезда" id="date-in" required>
+                <button id="date-in">Календарик</button>
+                <label for="date-out">Дата выезда:</label>
+                <input type="date" value="Дата выезда" id="date-out" required>
+                <button id="date-out">Календарик</button>
+                <label for="old">Взрослые:</label>
+                <button id="old">Кнопка уменьшения</button>
+                <input type="number" value="Количество взрослых" id="old" min="1" step="1" required>
+                <button id="old">Кнопка увеличения</button>
+                <label for="children">Дети:</label>
+                <button id="old">Кнопка уменьшения</button>
+                <input type="number" value="Количество детей" id="children" min="0" step="1" required>
+                <button id="old">Кнопка увеличения</button>
+                <a href="hotels.html" class="find">Найти</a>
+            </form>
+        </div>
         <div class="map"><!--    тут будет карта --></div>
     </main>
     <footer>
