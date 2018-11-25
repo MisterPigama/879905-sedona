@@ -20,7 +20,41 @@
         </nav>
       </header>
       <main>
-        <section class="selection-form"><!-- тут будет форма --></section>
+        <section class="selection-form">
+            <h2 class="form">Инфраструктура:</h2>
+            <p>
+                <input type="checkbox" checked>Бассейн<br>
+                <input type="checkbox">Парковка<br>
+                <input type="checkbox">Wi-Fi
+            </p>
+            <h2 class="form">Тип жилья:</h2>
+            <p>
+                <input type="checkbox" checked>Гостиница<br>
+                <input type="checkbox" checked>Мотель<br>
+                <input type="checkbox" checked>Аппартаменты    
+            </p>
+            <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+                <h2 class="form">стоимость в сутки (р): 3</h2>
+                <p>от 0</p>
+                <p>до 3000</p>
+                <p>
+                    <button class="first-ring" aria-label="Минимальная сумма"></button>
+                    <button class="second-ring" aria-label="Макисмальная сумма"></button>
+                </p>
+                <button type="submit" class="show-hotels">Показать</button>
+            </form>
+            <section>
+            <p>Найдено: 3</p>
+            <p>Сортировка:</p>
+            <ul>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+                <button class="up" aria-label="Выше"></button>
+                <button class="down" aria-label="Ниже"></button>
+            </section>
+        </section>
         <section class="hotels">
             <ul>
                 <li>
