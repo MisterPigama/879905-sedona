@@ -20,40 +20,56 @@
         </nav>
       </header>
       <main>
-        <section class="selection-form">
-            <h2 class="form">Инфраструктура:</h2>
-            <p>
-                <input type="checkbox" checked>Бассейн<br>
-                <input type="checkbox">Парковка<br>
-                <input type="checkbox">Wi-Fi
-            </p>
-            <h2 class="form">Тип жилья:</h2>
-            <p>
-                <input type="checkbox" checked>Гостиница<br>
-                <input type="checkbox" checked>Мотель<br>
-                <input type="checkbox" checked>Аппартаменты    
-            </p>
-            <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="post">
-                <h2 class="form">стоимость в сутки (р): 3</h2>
-                <p>от 0</p>
-                <p>до 3000</p>
+        <form class="choosing" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="infrastructure">
+                <legend>Инфраструктура:</legend>
+                <p>
+                    <input type="checkbox" checked id="pool">Бассейн
+                    <label for="pool">Бассейн</label><br>
+                    <input type="checkbox" id="parking">Парковка
+                    <label for="parking">Парковка</label><br>
+                    <input type="checkbox" id="wi-fi">Wi-Fi
+                    <label for="wi-fi">Wi-Fi</label>
+                </p>
+            </fieldset>
+            <fieldset class="types-hotels">
+                <legend class="form">Тип жилья:</legend>
+                <p>
+                    <input type="checkbox" checked id="hotel">Гостиница
+                    <label for="hotel">Гостиница</label><br>
+                    <input type="checkbox" checked id="motel">Мотель
+                    <label for="motel">Мотель</label><br>
+                    <input type="checkbox" checked id="appartments">Аппартаменты
+                    <label for="appartment">Аппартаменты</label>
+                </p>
+            </fieldset>
+            <fieldset class="hotels-cost">
+                <legend>стоимость в сутки (р): 3</legend>
+                <input type="text" name="min-cost" value="от 0">
+                <input type="tex" name="max-cost" value="до 3000">
                 <p>
                     <button class="first-ring" aria-label="Минимальная сумма"></button>
                     <button class="second-ring" aria-label="Макисмальная сумма"></button>
                 </p>
                 <button type="submit" class="show-hotels">Показать</button>
-            </form>
-            <section>
+            </fieldset>
+        </form>
+        <section>
             <p>Найдено: 3</p>
             <p>Сортировка:</p>
             <ul>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По рейтингу</li>
+                <li>
+                    <button class="sort-price">По цене</button>
+                </li>
+                <li>
+                    <button class="sort-type">По типу</button>
+                </li>
+                <li>
+                    <button class="sort-rating">По рейтингу</button>
+                </li>
             </ul>
-                <button class="up" aria-label="Выше"></button>
-                <button class="down" aria-label="Ниже"></button>
-            </section>
+            <button class="up" aria-label="Сортровка по возрастанию"></button>
+            <button class="down" aria-label="Сортировка по уменьшению"></button>
         </section>
         <section class="hotels">
             <ul>
