@@ -1,0 +1,225 @@
+/*глобальные*/
+body {
+margin: 0
+
+font-family: "PT Sans", Arial, sans-serif
+font-size: 14px;
+font-weight: normal;
+color: #333333;
+text-transform: uppercase;
+    
+background-color: #ffffff; 
+}
+
+header {
+font-family: "PT Sans", Arial, sans-serif
+font-size: 14px;
+font-weight: 700;
+color: #333333;
+text-transform: uppercase;
+    
+background-color: #ffffff; 
+}
+
+footer {
+background-color: white;
+color: black;
+}
+
+/*ссылки и кнопки*/
+a {
+text-decoration: none;
+color: black;
+}
+
+.list-navigation a {
+font-weight: 700;
+line-height: 24px;
+
+    
+background-color: white;
+}
+
+.list-navigation a:hover,
+.hotels h2:hover {
+color: #81b3d2;
+}
+
+.list-navigation a:focus,
+.hotels h2:focus {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.list-navigation a:active,
+.hotels h2:active {
+color: #766357;
+}
+
+a.button-to-popup,
+.find{
+text-align: center;
+color: #ffffff;
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+}
+
+.button-to-popup {
+background-color: #766357;
+}
+
+.find,
+.social a{
+font: inherit;
+background-color: #81b3d2; 
+}
+
+.book,
+.more-information {
+text-align: center;
+color: #ffffff;
+font-size: 14px;
+line-height: 21px;
+font-weight: 700;
+font-family: inherit;
+}
+
+.book {
+background-color: #766357;
+}
+
+.more-information {
+background-color: #81b3d2;
+}
+
+.social {
+text-align: center;
+}
+
+.twitter {
+background-image: url(../img/twitter.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.fb {
+background-image: url(../img/fb-icon.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.youtube {
+background-image: url(../img/youtube.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+a.button-to-popup:hover,
+.book:hover {
+background-color: #604e43;
+}
+
+a.button-to-popup:focus,
+book:focus {
+background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.more-information:hover,
+.find:hover,
+.social a:hover {
+background-color: #669ec0;
+}
+
+.more-information:focus,
+.find:focus,
+.social a:focus {
+background-color: #5496bd;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.sort a {
+color: rgba(0, 0, 0, 0.3);
+background-color: white;
+text-decoration: dashed underline #81b3d2;
+}
+.sort a:hover {
+color: #81b3d2;
+background-color: white;
+text-decoration: dashed underline #81b3d2;
+}
+
+.sort a:focus {
+color: black;
+background-color: white;
+}
+
+.show-hotels {
+font: inherit;
+line-height: 21px;
+color: white;
+    
+background: transparent;
+}
+
+/*списки*/
+.list-navigation,
+.benefits,
+.sort,
+.hotels li {
+list-style: none;
+color: black;
+    
+background-color: white;
+}
+
+
+
+/*параграфы*/
+.preview {
+text-align: center;
+background-color: #e3f0f8;
+background-image: url(../img/background-photo.jpg);
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+.slogan,
+.hashtag {
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+}
+
+.intresting {
+text-align: center;
+background-color: white;
+}
+
+.intresting p {
+font-size: 14px;
+line-height: 24px;
+color: black;
+}
+
+.intresting b {
+font-size: 30px;
+line-height: 36px;
+color: black;
+}
+
+.academy-logo {
+font-size: 14px;
+line-height: 26px;
+}
+
+.found {
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+}
+
+.sortered {
+font-size: 10.5px;
+line-height: 17.5px;
+}
