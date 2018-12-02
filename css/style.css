@@ -184,6 +184,10 @@ a.button-to-popup:focus,
     background-position: top center;
 }
 
+.form-search label {
+    font-weight: 700;  
+}
+
 .slogan,
 .hashtag {
     font-size: 21px;
