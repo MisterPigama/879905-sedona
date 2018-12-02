@@ -55,6 +55,8 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .button-to-popup {
@@ -63,7 +65,6 @@ a {
 
 .find-button,
 .social a {
-    font: inherit;
     background-color: #81b3d2; 
 }
 
@@ -74,7 +75,7 @@ a {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
-    font-family: inherit;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .book-button {
@@ -131,7 +132,7 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.list-sort a:not(.sort-price) {
+.list-sort a {
     display: inline-block;
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
@@ -149,14 +150,16 @@ a {
     background-color: #ffffff;
 }
 
-.sort-price {
+.list-sort .current {
     color: #81b3d2;
+    background-color: #ffffff;
+    border: none;
 }
 
 .show-hotels-button {
     font: inherit;
     line-height: 21px;
-    color: white;
+    color: #ffffff;
 
     background: transparent;
 }
@@ -239,10 +242,12 @@ a {
     text-transform: uppercase;
     border: none;
     outline: none;
+    border: 2px solid transparent;
     }
 
 .form-search input:hover {
     background-color: #ebebeb;
+    border: 2px solid transparent;
 }
 
 .form-search input:focus {
