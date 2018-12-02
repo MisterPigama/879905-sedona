@@ -131,7 +131,7 @@ a.button-to-popup:focus,
     background-color: #669ec0;
 }
 
-.more-information:focus,
+.more-information-button:focus,
 .find-button:focus,
 .social a:focus {
     background-color: #5496bd;
@@ -224,6 +224,6 @@ a.button-to-popup:focus,
 }
 
 .sortered {
-    font-size: 10.5px;
-    line-height: 17.5px;
+    font-size: 12px;
+    line-height: 18px;
 }
