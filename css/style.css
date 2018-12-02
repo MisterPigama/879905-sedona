@@ -12,13 +12,7 @@ body {
 }
 
 header {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
     font-weight: 700;
-    color: #333333;
-    text-transform: uppercase;
-
-    background-color: #ffffff; 
 }
 
 footer {
@@ -35,7 +29,6 @@ a {
 .list-navigation a {
     font-weight: 700;
     line-height: 24px;
-
     
     background-color: #ffffff;
 }
@@ -55,7 +48,7 @@ a {
     color: #766357;
 }
 
-a.button-to-popup,
+.button-to-popup,
 .find-button {
     text-align: center;
     color: #ffffff;
@@ -69,7 +62,7 @@ a.button-to-popup,
 }
 
 .find-button,
-.social a{
+.social a {
     font: inherit;
     background-color: #81b3d2; 
 }
@@ -114,12 +107,12 @@ a.button-to-popup,
     background-position: center;
 }
 
-a.button-to-popup:hover,
+.button-to-popup:hover,
 .book-button:hover {
     background-color: #604e43;
 }
 
-a.button-to-popup:focus,
+.button-to-popup:focus,
 .book-button:focus {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
@@ -138,20 +131,26 @@ a.button-to-popup:focus,
     color: rgba(255, 255, 255, 0.3);
 }
 
-.sort a {
+.list-sort a:not(.sort-price) {
+    display: inline-block;
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
-    text-decoration: dashed underline #81b3d2;
+    border-bottom: dotted 1px #81b3d2;
 }
-.sort a:hover {
+.list-sort a:hover {
+    display: inline-block;
     color: #81b3d2;
     background-color: #ffffff;
-    text-decoration: dashed underline #81b3d2;
+    border-bottom: dotted 1px #81b3d2;
 }
 
-.sort a:focus {
+.list-sort a:focus {
     color: #000000;
     background-color: #ffffff;
+}
+
+.sort-price {
+    color: #81b3d2;
 }
 
 .show-hotels-button {
@@ -164,9 +163,9 @@ a.button-to-popup:focus,
 
 /*списки*/
 .list-navigation,
-.benefits,
-.sort,
-.hotels li {
+.list-benefits,
+.list-sort,
+.list-hotels {
     list-style: none;
     color: #000000;
 
@@ -182,6 +181,10 @@ a.button-to-popup:focus,
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+.preview-content {
+    background-color: #ffffff;
 }
 
 .form-search label {
@@ -227,3 +230,23 @@ a.button-to-popup:focus,
     font-size: 12px;
     line-height: 18px;
 }
+
+/*формы*/
+.form-search input {
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    }
+
+.form-search input:hover {
+    background-color: #ebebeb;
+}
+
+.form-search input:focus {
+    background-color: #ffffff;
+    border: solid 2px #e5e5e5;
+} 
+

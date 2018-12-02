@@ -26,8 +26,10 @@
       <main>
         <section class="preview">
             <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-            <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <div class="preview-content">
+                <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+                <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            </div>
         </section>
         <section class="first-block-main">
                 <h2>Настоящий городок</h2>
@@ -35,7 +37,7 @@
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </section>
         <section>
-            <ul class="benefits">
+            <ul class="list-benefits">
                 <li>
                     <h2>Жильё</h2>
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -82,28 +84,42 @@
             <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
                 <p>
                     <label for="date-in">Дата заезда:</label>
-                    <input type="text" value="Дата заезда" id="date-in" required>
-                    <button class="date-in">Календарик</button>
-                </p>
-                <p>
+                    <div class="input-date-in">
+                        <input type="text" value="24 апреля 2017" id="date-in" required>
+                        <button class="calendar">
+                            Календарь
+                        </button>
+                    </div>
                     <label for="date-out">Дата выезда:</label>
-                    <input type="text" value="Дата выезда" id="date-out" required>
-                    <button class="date-out">Календарик</button>
+                    <div class="input-date-out">
+                        <input type="text" value="4 июля 2017" id="date-out" required>
+                        <button class="calendar">
+                            Календарь
+                        </button>
+                    </div>
                 </p>
                 <p>
                     <label for="old">Взрослые:</label>
-                    <button class="smaller-men">Кнопка уменьшения</button>
-                    <input type="number" value="Количество взрослых" id="old" min="1" step="1" required>
-                    <button class="bigger-men">Кнопка увеличения</button>
+                    <div class="input-count-men">
+                        <button class="smaller-men">
+                            Кнопка уменьшения
+                        </button>
+                        <input type="number" value="2" id="old" min="1" step="1" required>
+                        <button class="bigger-men">Кнопка увеличения</button>
+                    </div>
                     <label for="children">Дети:</label>
+                    <div class="input-count-children">
                     <button class="smaller-children">Кнопка уменьшения</button>
-                    <input type="number" value="Количество детей" id="children" min="0" step="1" required>
+                    <input type="number" value="0" id="children" min="0" step="1" required>
                     <button class="bigger-children">Кнопка увеличения</button>
+                    </div>
                 </p>
                 <button class="find-button" type="submit">Найти</button>
             </form>
         </section>
-        <section class="map"><!--    тут будет карта --></section>
+        <section class="map">
+            <img src="img/map.jpg">
+        </section>
     </main>
     <footer>
         <p class="hashtag">#visitsedona</p>
