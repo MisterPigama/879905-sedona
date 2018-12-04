@@ -255,3 +255,22 @@ a {
     border: solid 2px #e5e5e5;
 } 
 
+/*Сетки*/
+.main-body {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.main-header {
+    margin-bottom: 75px;
+}
+
+.list-navigation {
+    display: flex;
+   justify-content: space-between;
+    padding: 0 72px;
+}
+
+
