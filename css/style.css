@@ -12,18 +12,41 @@ body {
 }
 
 header {
+    margin: 0;
     font-weight: 700;
 }
 
+.visually-hidden {
+    visibility: hidden;
+    position: absolute; 
+}
+
+.map {
+    width: 1200px;
+    height: 593px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -593px;
+    z-index: -1;
+}
+    
 footer {
     background-color: #ffffff;
     color: #000000;
+    opacity: 0.9;
 }
 
 /*ссылки и кнопки*/
 a {
     text-decoration: none;
     color: #000000;
+}
+
+.header-navigation img {
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
 }
 
 .list-navigation a {
@@ -48,6 +71,18 @@ a {
     color: #766357;
 }
 
+.list-navigation .current {
+   color:#766357; 
+}
+
+.find-button {
+    border: 0;
+    width: 100%;
+    min-height: 55px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
 .button-to-popup,
 .find-button {
     text-align: center;
@@ -60,12 +95,22 @@ a {
 }
 
 .button-to-popup {
+    display: block;
     background-color: #766357;
+    width: 568px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .find-button,
 .social a {
     background-color: #81b3d2; 
+}
+
+.social a {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
 }
 
 .book-button,
@@ -164,6 +209,39 @@ a {
     background: transparent;
 }
 
+.academy-logo svg {
+    width: 115px;
+    height: 41px;
+    fill: #ffffff;
+}
+
+.academy-logo svg:hover {
+    fill: #81b3d2;
+}
+
+.academy-logo svg:focus {
+    fill: #bdbbbc;
+}
+
+.calendar svg {
+    fill: #a9a9a9;
+}
+
+.calendar svg:hover {
+    fill: #000000;
+}
+
+.calendar svg:focus {
+    fill: #81b3d2;
+}
+
+.smaller-men:hover,
+.bigger-men:hover,
+.smaller-children:hover,
+.bigger-children:hover {
+    background-color: #ebebeb;
+}
+
 /*списки*/
 .list-navigation,
 .list-benefits,
@@ -175,19 +253,29 @@ a {
     background-color: #ffffff;
 }
 
-
-
 /*параграфы*/
 .preview {
     text-align: center;
     background-color: #e3f0f8;
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: 50% -165px;
 }
 
-.preview-content {
+.slogan {
     background-color: #ffffff;
+    display: block;
+    margin-top: 0;
+    padding-left: 380px;
+    padding-right: 380px;
+}
+
+.lead {
+    background-color: #ffffff;
+    display: block;
+    margin-top: 38px;
+    padding-left: 355px;
+    padding-right: 355px;
 }
 
 .form-search label {
@@ -256,11 +344,13 @@ a {
 } 
 
 /*Сетки*/
-.main-body {
+.main-container,
+.hotels-container {
     display: block;
     margin-left:auto;
     margin-right: auto;
     width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-header {
@@ -269,8 +359,182 @@ a {
 
 .list-navigation {
     display: flex;
-   justify-content: space-between;
-    padding: 0 72px;
+    justify-content: space-between;
+    padding: 20px 72px;
+    margin: 0;
 }
 
+.list-navigation li {
+    width: 300px;
+}
 
+.right-nav-menu {
+    text-align: right;
+    padding-left: 170px;
+}
+
+.preview-content {
+    min-height: 215 px;
+}
+
+.footer {
+    min-height: 120px;
+    opacity: 0.8;
+    margin-top: 78px;
+    padding: 36px 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hashtag {
+    width: 136px;
+    margin: 0;
+    margin-right: 256px;
+    margin-top: 52px;
+    margin-left: 132px;
+    
+}
+
+.social {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom:36px;
+    margin-right: 240px;
+}
+
+.academy-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0;
+    margin-right: 100px;
+    margin-top: 35px;
+}
+
+.intresting {
+    display: flex;
+    min-height: 291px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column; 
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.intresting-question {
+    margin-top: 49px;
+    margin-bottom: 10px;
+}
+
+.amara-details {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    min-height: 150px;    
+}
+
+.amara-thumb {
+    padding: 30px;
+    width: 135px;
+    height: 90px;
+}
+
+.amara-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 258px;
+}
+
+.amara-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Попап сетка*/
+.button-to-popup {
+    margin-top: 32px;
+}
+
+.popup {
+    display: flex;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 395px;
+    width: 568px;
+    background-color: #ffffff;
+}
+
+.form-search {
+    display: flex;
+    padding: 55px;
+    flex-wrap: wrap;
+}
+
+.input-date-in input,
+.input-date-out input {
+    width: 333px;
+    height: 38px;
+    margin: 0;
+    margin-left: 12px;
+    margin-right: -2px;
+    padding: auto;
+    padding-left: 13px;
+}
+
+.calendar {
+    display: block;
+    position: absolute;
+    border: 0;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-left: 321px;
+    margin-top: -42px;
+}
+
+.inputs-count-humans {
+    display: flex;
+    width: 458px;
+    justify-content: space-between;
+}
+
+.input-count-men input,
+.input-count-children input {
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    text-align: center;
+}
+
+.smaller-men,
+.bigger-men,
+.smaller-children,
+.bigger-children {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #a9a9a9;
+    margin: 0;
+}
+
+/*картиночки*/
+
+.preview-content img {
+    margin: 0;
+    margin-top: 21px;
+}
