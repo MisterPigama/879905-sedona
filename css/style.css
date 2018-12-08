@@ -24,11 +24,8 @@ header {
 .map {
     width: 1200px;
     height: 593px;
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -593px;
-    z-index: -1;
 }
     
 footer {
@@ -227,12 +224,14 @@ a {
     fill: #a9a9a9;
 }
 
-.calendar svg:hover {
+.calendar:hover svg {
     fill: #000000;
+    outline: 0;
 }
 
-.calendar svg:focus {
+.calendar:focus svg {
     fill: #81b3d2;
+    outline: 0;
 }
 
 .smaller-men:hover,
@@ -243,6 +242,11 @@ a {
 }
 
 /*списки*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .list-navigation,
 .list-benefits,
 .list-sort,
@@ -268,6 +272,7 @@ a {
     margin-top: 0;
     padding-left: 380px;
     padding-right: 380px;
+    background-color: #ffffff;
 }
 
 .lead {
@@ -287,11 +292,6 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-}
-
-.intresting {
-    text-align: center;
-    background-color: #ffffff;
 }
 
 .intresting p {
@@ -374,7 +374,8 @@ a {
 }
 
 .preview-content {
-    min-height: 215 px;
+    min-height: 215px;
+    margin-top: 21px;
 }
 
 .footer {
@@ -417,15 +418,16 @@ a {
 
 .intresting {
     display: flex;
+    position: relative;
     min-height: 291px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column; 
-    width: 1200px;
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .intresting-question {
@@ -433,29 +435,37 @@ a {
     margin-bottom: 10px;
 }
 
-.amara-details {
-    display: flex;
-    justify-content: space-between;
+.list-hotels {
     width: 1200px;
     min-height: 150px;    
 }
 
-.amara-thumb {
-    padding: 30px;
+.image-hotel {
+    margin: 30px;
+    margin-left: 72px;
     width: 135px;
     height: 90px;
 }
 
-.amara-info {
+.info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 258px;
+    margin-right: 522px;
 }
 
-.amara-rating {
+.list-hotels li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.rating {
     display: flex;
     flex-direction: column;
+    margin-right: 72px;
+    margin-top: 29px;
 }
 
 /*Попап сетка*/
@@ -464,12 +474,14 @@ a {
 }
 
 .popup {
+    position: absolute;
     display: flex;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
     min-height: 395px;
     width: 568px;
+    margin-top: 292px;
     background-color: #ffffff;
 }
 
@@ -488,6 +500,7 @@ a {
     margin-right: -2px;
     padding: auto;
     padding-left: 13px;
+    padding-right: 30px;
 }
 
 .calendar {
@@ -500,6 +513,7 @@ a {
     margin: 0;
     margin-left: 321px;
     margin-top: -42px;
+    outline: 0;
 }
 
 .inputs-count-humans {
@@ -514,6 +528,8 @@ a {
     height: 38px;
     margin: 0;
     text-align: center;
+    border: 0;
+    padding: 0;
 }
 
 .smaller-men,
@@ -534,7 +550,7 @@ a {
 
 /*картиночки*/
 
-.preview-content img {
+.preview-content:before {
+    content: url("../img/polygon.svg");
     margin: 0;
-    margin-top: 21px;
 }

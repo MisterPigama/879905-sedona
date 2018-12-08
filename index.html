@@ -27,7 +27,6 @@
             <section class="preview">
                 <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
                 <div class="preview-content">
-                    <img src="img/polygon.svg">
                     <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
                     <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
@@ -80,15 +79,14 @@
                 <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
                 <a href="form.html" class="button-to-popup">поиск гостиницы в седоне</a>
-            </section>
-            <section class="popup">
-                <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
-                    <p>
-                        <label for="date-in">Дата заезда:</label>
-                        <div class="input-date-in">
-                            <input type="text" value="24 апреля 2017" id="date-in" required>
-                            <button class="calendar" type="button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <section class="popup">
+                    <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
+                        <p>
+                            <label for="date-in">Дата заезда:</label>
+                            <div class="input-date-in">
+                                <input type="text" value="24 апреля 2017" id="date-in" required>
+                                <button class="calendar" type="button">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 <g id="calendar_1_">
 	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -108,14 +106,14 @@
 	<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
 	<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
 </g>
-                                </svg>
-                            </button>
-                        </div>
-                        <label for="date-out">Дата выезда:</label>
-                        <div class="input-date-out">
-                            <input type="text" value="4 июля 2017" id="date-out" required>
-                            <button class="calendar" type="button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    </svg>
+                                </button>
+                            </div>
+                            <label for="date-out">Дата выезда:</label>
+                            <div class="input-date-out">
+                                <input type="text" value="4 июля 2017" id="date-out" required>
+                                <button class="calendar" type="button">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 <g id="calendar_1_">
 	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -135,38 +133,40 @@
 	<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
 	<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
 </g>
-                                </svg>
-                            </button>
-                        </div>
-                    </p>
-                    <p class="inputs-count-humans">
-                        <label for="old">Взрослые:</label>
-                        <div class="input-count-men">
-                            <button class="smaller-men" type="button">
+                                    </svg>
+                                </button>
+                            </div>
+                        </p>
+                        <p class="inputs-count-humans">
+                            <label for="old">Взрослые:</label>
+                            <div class="input-count-men">
+                                <button class="smaller-men" type="button">
                                 -
-                            </button>
-                            <input type="text" value="2" id="old" required>
-                            <button class="bigger-men" type="button">
+                                </button>
+                                <input type="text" value="2" id="old" required>
+                                <button class="bigger-men" type="button">
                                 +
-                            </button>
-                        </div>
-                        <label for="children">Дети:</label>
-                        <div class="input-count-children">
-                            <button class="smaller-children" type="button">
-                            -
-                            </button>
-                            <input type="text" value="0" id="children" required>
-                            <button class="bigger-children" type="button">
-                            +
-                            </button>
-                        </div>
-                    </p>
-                    <button class="find-button" type="submit">Найти</button>
-                </form>
+                                </button>
+                            </div>
+                            <label for="children">Дети:</label>
+                            <div class="input-count-children">
+                                <button class="smaller-children" type="button">
+                                -
+                                </button>
+                                <input type="text" value="0" id="children" required>
+                                <button class="bigger-children" type="button">
+                                +
+                                </button>
+                            </div>
+                        </p>
+                        <button class="find-button" type="submit">Найти</button>
+                    </form>
             </section>
+          </section>
             <section class="map">
                 <img src="img/map.jpg">
             </section>
+          
         </main>
         <footer>
             <div class="footer-container">
