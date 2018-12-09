@@ -17,8 +17,12 @@ header {
 }
 
 .visually-hidden {
-    visibility: hidden;
-    position: absolute; 
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 .map {
@@ -32,6 +36,12 @@ footer {
     background-color: #ffffff;
     color: #000000;
     opacity: 0.9;
+    margin-top: -120px;
+    position: relative;
+}
+
+nav {
+    position: relative;
 }
 
 /*ссылки и кнопки*/
@@ -40,7 +50,7 @@ a {
     color: #000000;
 }
 
-.header-navigation img {
+.logo {
     position: absolute;
     left: 50%;
     margin-left: -70px;
@@ -150,6 +160,12 @@ a {
     background-position: center;
 }
 
+.twitter:focus,
+.fb:focus,
+.youtube:focus {
+    opacity: 2;
+}
+
 .button-to-popup:hover,
 .book-button:hover {
     background-color: #604e43;
@@ -172,6 +188,11 @@ a {
 .social a:focus {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+}
+.twitter:focus,
+.fb:focus,
+.youtube:focus {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .list-sort a {
@@ -212,11 +233,19 @@ a {
     fill: #ffffff;
 }
 
-.academy-logo svg:hover {
+.academy-logo:hover path {
     fill: #81b3d2;
 }
 
-.academy-logo svg:focus {
+.academy-logo:focus path {
+    fill: #bdbbbc;
+}
+
+.academy-logo:hover rect {
+    fill: #81b3d2;
+}
+
+.academy-logo:focus rect {
     fill: #bdbbbc;
 }
 
@@ -263,7 +292,7 @@ ul {
     background-color: #e3f0f8;
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
-    background-position: 50% -165px;
+    padding-top: 75px;
 }
 
 .slogan {
@@ -278,7 +307,7 @@ ul {
 .lead {
     background-color: #ffffff;
     display: block;
-    margin-top: 38px;
+    padding-top: 38px;
     padding-left: 355px;
     padding-right: 355px;
 }
@@ -354,7 +383,7 @@ ul {
 }
 
 .main-header {
-    margin-bottom: 75px;
+    margin-bottom: 0;
 }
 
 .list-navigation {
@@ -442,7 +471,6 @@ ul {
 
 .image-hotel {
     margin: 30px;
-    margin-left: 72px;
     width: 135px;
     height: 90px;
 }
@@ -453,24 +481,49 @@ ul {
     flex-wrap: wrap;
     width: 258px;
     margin-right: 522px;
+    background-color: antiquewhite;
+}
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-top: 29px;
+    background-color: aqua;
+}
+.rating {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 5px;
+    padding-right: 13px;
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    width: 90px;
+    margin: 0;
+    min-height: 17px;
+    margin-top: 29px;
+}
+
+.stars {
+    width: 87px;
 }
 
 .list-hotels li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
+    padding: 25px 73px;
+    background-color: azure;
 }
 
-.rating {
-    display: flex;
-    flex-direction: column;
-    margin-right: 72px;
-    margin-top: 29px;
-}
 
 /*Попап сетка*/
 .button-to-popup {
     margin-top: 32px;
+    margin: 0;
 }
 
 .popup {
@@ -489,18 +542,19 @@ ul {
     display: flex;
     padding: 55px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .input-date-in input,
 .input-date-out input {
-    width: 333px;
+    width: 303px;
     height: 38px;
     margin: 0;
     margin-left: 12px;
-    margin-right: -2px;
-    padding: auto;
     padding-left: 13px;
     padding-right: 30px;
+
 }
 
 .calendar {
@@ -514,12 +568,25 @@ ul {
     margin-left: 321px;
     margin-top: -42px;
     outline: 0;
+    cursor: pointer;
 }
 
 .inputs-count-humans {
     display: flex;
     width: 458px;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    align-items: center;
+}
+
+.input-count-men,
+.input-count-children {
+    display: flex;
+    justify-content: space-between;
+    width: 114px;
+    margin-left: 27px;
+    margin: 0;
 }
 
 .input-count-men input,
@@ -527,9 +594,9 @@ ul {
     width: 38px;
     height: 38px;
     margin: 0;
-    text-align: center;
     border: 0;
     padding: 0;
+    text-align: center;
 }
 
 .smaller-men,
@@ -546,7 +613,16 @@ ul {
     font-weight: 700;
     color: #a9a9a9;
     margin: 0;
+    cursor: pointer;
 }
+
+.container-popup-humans {
+    display: flex;
+    width: 458px;
+    justify-content: space-between;
+}
+
+
 
 /*картиночки*/
 
