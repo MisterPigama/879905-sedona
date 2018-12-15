@@ -14,6 +14,7 @@ body {
 header {
     margin: 0;
     font-weight: 700;
+    min-height: 56px;
 }
 
 .visually-hidden {
@@ -88,6 +89,7 @@ a {
     min-height: 55px;
     padding-top: auto;
     padding-bottom: auto;
+    margin-top: 21px;
 }
 
 .button-to-popup,
@@ -293,23 +295,30 @@ ul {
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     padding-top: 75px;
+    background-position: 0 -82px;
+}
+
+.preview img {
+    margin-bottom: 76px;
 }
 
 .slogan {
     background-color: #ffffff;
     display: block;
-    margin-top: 0;
-    padding-left: 380px;
-    padding-right: 380px;
+    margin: 0;
+    padding-left: 370px;
+    padding-right: 370px;
     background-color: #ffffff;
+    padding-bottom: 33px;
+    padding-top: 61px;
 }
 
 .lead {
     background-color: #ffffff;
     display: block;
-    padding-top: 38px;
     padding-left: 355px;
     padding-right: 355px;
+    margin: 0;
 }
 
 .form-search label {
@@ -389,22 +398,37 @@ ul {
 .list-navigation {
     display: flex;
     justify-content: space-between;
-    padding: 20px 72px;
-    margin: 0;
+    min-height: 55px;
+    align-items: center;
 }
 
 .list-navigation li {
-    width: 300px;
+    padding: 0;
+    margin: 0;
+    width: 239px;
+    text-align: left;
 }
 
-.right-nav-menu {
+.list-navigation li:nth-child(3),
+.list-navigation li:last-child {
     text-align: right;
-    padding-left: 170px;
+}
+
+.list-navigation li:last-child {
+    margin-right: 71px;
+}
+
+.list-navigation li:nth-child(3) {
+    margin-left: 87px;
+}
+
+.list-navigation li:first-child {
+    margin-left: 71px;
 }
 
 .preview-content {
+    position: relative;
     min-height: 215px;
-    margin-top: 21px;
 }
 
 .footer {
@@ -422,7 +446,7 @@ ul {
     width: 136px;
     margin: 0;
     margin-right: 256px;
-    margin-top: 52px;
+    margin-top: 46px;
     margin-left: 132px;
     
 }
@@ -433,7 +457,7 @@ ul {
     justify-content: space-between;
     margin-top: 36px;
     margin-bottom:36px;
-    margin-right: 240px;
+    margin-right: 228px;
 }
 
 .academy-logo {
@@ -442,7 +466,11 @@ ul {
     width: 200px;
     margin: 0;
     margin-right: 100px;
-    margin-top: 35px;
+    margin-top: 45px;
+}
+
+.academy-logo a {
+    margin-top: -5px;
 }
 
 .intresting {
@@ -461,7 +489,7 @@ ul {
 
 .intresting-question {
     margin-top: 49px;
-    margin-bottom: 10px;
+    margin-bottom: -23px;
 }
 
 .list-hotels {
@@ -470,23 +498,39 @@ ul {
 }
 
 .image-hotel {
-    margin: 30px;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 30px;
     width: 135px;
     height: 90px;
 }
 
 .info {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 258px;
+    min-height: 79px;
+    margin: 0;
+    margin-top: 25px; 
     margin-right: 522px;
     background-color: antiquewhite;
+    
+    padding: 0;
 }
+
+.type-price {
+    margin-right: 76px;
+}
+
+.type-price,
+.type {
+    margin-top: -5px;
+}
+
 .rating-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin: 0;
     padding: 0;
     padding-top: 29px;
@@ -507,18 +551,47 @@ ul {
     margin-top: 29px;
 }
 
+.hotels-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-top: 3px;
+}
+
+
+
 .stars {
-    width: 87px;
+    width: 100%;
+    text-align: right;
 }
 
 .list-hotels li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
-    padding: 25px 73px;
+    padding: 25px 72px;
     background-color: azure;
 }
 
+
+.more-information-button {
+    width: 76px;
+    margin-right: 6px;
+    padding: 5px 17px;
+}
+
+.book-button {
+    width: 108px;
+    padding: 5px 17px;
+}
+
+.name-of-the-hotels h2{
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    padding-right: 36px;
+}
 
 /*Попап сетка*/
 .button-to-popup {
@@ -540,21 +613,40 @@ ul {
 
 .form-search {
     display: flex;
-    padding: 55px;
+    margin: 55px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    align-content: space-between;
+    background-color: aqua;
 }
 
-.input-date-in input,
+.form-search label {
+    margin-left: 2px;
+}
+
+.input-date-in input {
+    width: 300px;
+    height: 30px;
+    margin: 0;
+    margin-left: 12px;
+    padding-left: 13px;
+    padding-right: 30px;
+}
+
 .input-date-out input {
-    width: 303px;
-    height: 38px;
+    width: 300px;
+    height: 30px;
     margin: 0;
     margin-left: 12px;
     padding-left: 13px;
     padding-right: 30px;
 
+}
+
+.input-date-out {
+    margin-top: -14px;
+    margin-bottom: -13px;
 }
 
 .calendar {
@@ -565,8 +657,8 @@ ul {
     width: 40px;
     height: 40px;
     margin: 0;
-    margin-left: 321px;
-    margin-top: -42px;
+    margin-left: 320px;
+    margin-top: -36px;
     outline: 0;
     cursor: pointer;
 }
@@ -627,6 +719,12 @@ ul {
 /*картиночки*/
 
 .preview-content:before {
-    content: url("../img/polygon.svg");
+    position: absolute;
+    content: "";
     margin: 0;
+    background-image: url("../img/polygon.svg");
+    margin-left: -600px;
+    width: 1200px;
+    height: 58px;
+    margin-top: -57px;
 }
