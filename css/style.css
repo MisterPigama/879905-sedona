@@ -33,13 +33,7 @@ header {
     margin-right: auto;
 }
     
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    opacity: 0.9;
-    margin-top: -120px;
-    position: relative;
-}
+
 
 nav {
     position: relative;
@@ -87,9 +81,6 @@ a {
     border: 0;
     width: 100%;
     min-height: 55px;
-    padding-top: auto;
-    padding-bottom: auto;
-    margin-top: 21px;
 }
 
 .button-to-popup,
@@ -251,16 +242,19 @@ a {
     fill: #bdbbbc;
 }
 
-.calendar svg {
+.calendar-1 svg,
+.calendar-2 svg {
     fill: #a9a9a9;
 }
 
-.calendar:hover svg {
+.calendar-1:hover svg,
+.calendar-2:hover svg {
     fill: #000000;
     outline: 0;
 }
 
-.calendar:focus svg {
+.calendar-1:focus svg,
+.calendar-2:focus svg {
     fill: #81b3d2;
     outline: 0;
 }
@@ -368,16 +362,15 @@ ul {
     text-transform: uppercase;
     border: none;
     outline: none;
-    border: 2px solid transparent;
     }
 
 .form-search input:hover {
     background-color: #ebebeb;
-    border: 2px solid transparent;
 }
 
 .form-search input:focus {
     background-color: #ffffff;
+    box-sizing: border-box;
     border: solid 2px #e5e5e5;
 } 
 
@@ -429,26 +422,38 @@ ul {
 .preview-content {
     position: relative;
     min-height: 215px;
+    background-color: #ffffff;
 }
 
-.footer {
+footer {
     min-height: 120px;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 78px;
-    padding: 36px 0;
-}
-.footer-container {
     display: flex;
-    justify-content: space-around;
+    padding-left: 132px;
+    padding-right: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: -120px;
+    position: relative;
+}
+
+.footer-hotels {
+    min-height: 120px;
+    display: flex;
+    padding-left: 132px;
+    padding-right: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
 }
 
 .hashtag {
     width: 136px;
     margin: 0;
-    margin-right: 256px;
     margin-top: 46px;
-    margin-left: 132px;
-    
+    padding: 0;
+    margin-right: 257px;
 }
 
 .social {
@@ -456,7 +461,7 @@ ul {
     width: 150px;
     justify-content: space-between;
     margin-top: 36px;
-    margin-bottom:36px;
+    padding: 0;
     margin-right: 228px;
 }
 
@@ -465,8 +470,9 @@ ul {
     justify-content: space-between;
     width: 200px;
     margin: 0;
-    margin-right: 100px;
     margin-top: 45px;
+    padding: 0;
+    margin-right: 0;
 }
 
 .academy-logo a {
@@ -482,14 +488,12 @@ ul {
     margin-right: auto;
     flex-direction: column; 
     align-items: center;
-    justify-content: space-between;
     background-color: #ffffff;
     text-align: center;
 }
 
 .intresting-question {
     margin-top: 49px;
-    margin-bottom: -23px;
 }
 
 .list-hotels {
@@ -499,33 +503,33 @@ ul {
 
 .image-hotel {
     margin: 0;
-    margin-top: 30px;
     margin-right: 30px;
     width: 135px;
     height: 90px;
+    padding-top: 5px;
 }
 
 .info {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     width: 258px;
-    min-height: 79px;
-    margin: 0;
-    margin-top: 25px; 
-    margin-right: 522px;
-    background-color: antiquewhite;
-    
+    margin: 0;    
     padding: 0;
+}
+
+.info-spans {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.info-spans span {
+    width: 117px;
+    margin: 0;
+    padding: 0;    
 }
 
 .type-price {
     margin-right: 76px;
-}
-
-.type-price,
-.type {
-    margin-top: -5px;
 }
 
 .rating-container {
@@ -533,64 +537,64 @@ ul {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    padding-top: 29px;
-    background-color: aqua;
+    margin-left: auto;
+    padding-top: 5px;
 }
 .rating {
     display: flex;
     background-color: #f2f2f2;
-    padding: 5px;
+    padding: 4px;
     padding-right: 13px;
     padding-left: 16px;
     font-size: 14px;
     line-height: 21px;
     color: #666666;
-    width: 90px;
+    width: 83px;
     margin: 0;
-    min-height: 17px;
-    margin-top: 29px;
 }
 
 .hotels-buttons {
     display: flex;
-    flex-wrap: nowrap;
     margin: 0;
-    margin-top: 3px;
+    padding: 0;
 }
 
-
-
 .stars {
-    width: 100%;
     text-align: right;
+    margin: 0;
+    margin-bottom: 43px;
 }
 
 .list-hotels li {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #f2f2f2;
-    padding: 25px 72px;
-    background-color: azure;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 27px;
+    padding-left: 72px;
+    padding-right: 73px;
+    padding-bottom: 27px;
+    margin: 0;
 }
-
 
 .more-information-button {
     width: 76px;
     margin-right: 6px;
-    padding: 5px 17px;
+    padding: 3px 17px 2px 17px;
 }
 
 .book-button {
     width: 108px;
-    padding: 5px 17px;
+    padding: 3px 17px 2px 17px;
 }
 
 .name-of-the-hotels h2{
     margin: 0;
+    padding: 0;
     font-size: 21px;
     line-height: 26px;
-    text-align: center;
-    padding-right: 36px;
+}
+
+.name-of-the-hotels {
+    margin-bottom: 10px;
 }
 
 /*Попап сетка*/
@@ -614,15 +618,22 @@ ul {
 .form-search {
     display: flex;
     margin: 55px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: space-between;
+    flex-direction: column;
     background-color: aqua;
 }
 
-.form-search label {
+.date-in,
+.date-out {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.date-in label,
+.date-out label {
     margin-left: 2px;
+    margin-top: 8px;
 }
 
 .input-date-in input {
@@ -632,6 +643,7 @@ ul {
     margin-left: 12px;
     padding-left: 13px;
     padding-right: 30px;
+    position: relative;
 }
 
 .input-date-out input {
@@ -641,15 +653,10 @@ ul {
     margin-left: 12px;
     padding-left: 13px;
     padding-right: 30px;
-
+    position: relative;
 }
 
-.input-date-out {
-    margin-top: -14px;
-    margin-bottom: -13px;
-}
-
-.calendar {
+.calendar-1 {
     display: block;
     position: absolute;
     border: 0;
@@ -657,8 +664,22 @@ ul {
     width: 40px;
     height: 40px;
     margin: 0;
-    margin-left: 320px;
-    margin-top: -36px;
+    left: 474px;
+    top: 54px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.calendar-2 {
+    display: block;
+    position: absolute;
+    border: 0;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    left: 474px;
+    top: 121px;
     outline: 0;
     cursor: pointer;
 }
@@ -666,10 +687,11 @@ ul {
 .inputs-count-humans {
     display: flex;
     width: 458px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     margin: 0;
     align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 51px; 
 }
 
 .input-count-men,
@@ -677,7 +699,6 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 114px;
-    margin-left: 27px;
     margin: 0;
 }
 
@@ -714,6 +735,29 @@ ul {
     justify-content: space-between;
 }
 
+.children {
+    display: flex;
+    align-items: center;
+    width: 178px;
+}
+
+.children label {
+    margin-right: 10px;
+}
+
+.men {
+    display: flex;
+    align-items: center;
+     width: 141px;
+}
+
+.men label {
+    margin-right: 40px;
+}
+
+.children label {
+    margin-right: 26px;
+}
 
 
 /*картиночки*/
