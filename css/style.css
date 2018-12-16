@@ -330,6 +330,8 @@ ul {
     font-size: 14px;
     line-height: 24px;
     color: #000000;
+    margin: 0;
+    margin-bottom: 46px;
 }
 
 .intresting b {
@@ -482,7 +484,6 @@ footer {
 .intresting {
     display: flex;
     position: relative;
-    min-height: 291px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -490,10 +491,11 @@ footer {
     align-items: center;
     background-color: #ffffff;
     text-align: center;
+    padding-top: 94px;
 }
 
 .intresting-question {
-    margin-top: 49px;
+    margin-bottom: 25px;
 }
 
 .list-hotels {
@@ -599,19 +601,17 @@ footer {
 
 /*Попап сетка*/
 .button-to-popup {
-    margin-top: 32px;
     margin: 0;
 }
 
 .popup {
     position: absolute;
+    left: 316px;
+    top: 335px;
     display: flex;
     margin: 0;
-    margin-right: auto;
-    margin-left: auto;
     min-height: 395px;
     width: 568px;
-    margin-top: 292px;
     background-color: #ffffff;
 }
 
@@ -619,7 +619,6 @@ footer {
     display: flex;
     margin: 55px;
     flex-direction: column;
-    background-color: aqua;
 }
 
 .date-in,
@@ -627,31 +626,33 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 }
 
-.date-in label,
+.date-in label {
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
 .date-out label {
     margin-left: 2px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .input-date-in input {
     width: 300px;
-    height: 30px;
+    height: 36px;
     margin: 0;
-    margin-left: 12px;
-    padding-left: 13px;
+    padding-left: 16px;
     padding-right: 30px;
     position: relative;
 }
 
 .input-date-out input {
     width: 300px;
-    height: 30px;
+    height: 36px;
     margin: 0;
-    margin-left: 12px;
-    padding-left: 13px;
+    padding-left: 16px;
     padding-right: 30px;
     position: relative;
 }
@@ -691,7 +692,7 @@ footer {
     align-items: center;
     padding: 0;
     justify-content: space-between;
-    margin-bottom: 51px; 
+    margin-bottom: 56px; 
 }
 
 .input-count-men,
@@ -741,10 +742,6 @@ footer {
     width: 178px;
 }
 
-.children label {
-    margin-right: 10px;
-}
-
 .men {
     display: flex;
     align-items: center;
@@ -752,13 +749,200 @@ footer {
 }
 
 .men label {
-    margin-right: 40px;
+    margin-right: 41px;
 }
 
 .children label {
     margin-right: 26px;
 }
 
+
+/*сетки центрального раздела главной страницы*/
+
+.first-block-main,
+.second-block-main {
+    color: #ffffff;
+    background-color: #81b3d2;
+    display: flex;
+}
+
+.first-block-main div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 47px;
+    align-items: center;
+    padding-left: 59px;
+    padding-right: 59px;
+}
+
+.first-block-main h2 {
+    margin: 0;
+    margin-bottom: 23px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.first-block-main span {
+    margin-bottom: 9px;
+}
+
+.first-block-main p {
+    line-height: 21px;
+    text-align: center;
+}
+
+.second-block-main div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.second-block-main h2 {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.second-block-main span {
+    margin-bottom: 10px;
+}
+
+.second-block-main p {
+    line-height: 21px;
+    text-align: center;
+}
+
+.list-benefits {
+    display: flex;
+}
+
+.list-benefits li {
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 160px;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+.list-benefits li:first-child {
+    background-image: url("../img/icon-1.svg");
+    background-position: 163px 63px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-right: 72px;
+}
+
+.list-benefits li:nth-child(2) {
+    background-image: url("../img/icon-3.svg");
+    background-position: 142px 63px;
+    background-repeat: no-repeat;
+    padding-left: 27px;
+    padding-right: 72px;
+}
+
+.list-benefits li:last-child {
+    background-image: url("../img/icon-2.svg");
+    background-position: 147px 59px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 63px;
+}
+
+.list-benefits p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 21px;
+}
+
+.list-benefits h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+ 
+}
+
+.block-without-imgs {
+    display: flex;
+    background-color: #eeeeee;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.third-block,
+.fourth-block,
+.fifth-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.third-block {
+    width: 242px;
+    padding-right: 95px;
+    padding-left: 81px;
+}
+
+.third-block h2 {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.third-block span {
+    margin-bottom: 11px;
+}
+
+.third-block p {
+    line-height: 21px;
+    text-align: center;
+}
+
+.fourth-block {
+    width: 262px;
+    padding-right: 69px;
+    padding-left: 51px;
+}
+
+.fourth-block h2 {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.fourth-block span {
+    margin-bottom: 11px;
+}
+
+.fourth-block p {
+    line-height: 21px;
+    text-align: center;
+}
+
+.fifth-block {
+    width: 248px;
+    padding-left: 77px;
+    padding-right: 77px;
+}
+
+.fifth-block h2 {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.fifth-block span {
+    margin-bottom: 11px;
+}
+
+.fifth-block p {
+    line-height: 21px;
+    text-align: center;
+}
 
 /*картиночки*/
 
