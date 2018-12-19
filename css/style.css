@@ -135,29 +135,32 @@ a {
     text-align: center;
 }
 
-.twitter {
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.fb {
-    background-image: url(../img/fb-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.youtube {
-    background-image: url(../img/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .twitter:focus,
 .fb:focus,
 .youtube:focus {
-    opacity: 2;
+    background-color: #5496bd;
 }
+
+.twitter:focus svg,
+.fb:focus svg,
+.youtube:focus svg {
+    opacity: 0.7 
+}
+
+
+.twitter svg {
+    margin-top: 18px;
+}
+
+
+.fb svg {
+    margin-top: 12px;
+}
+
+.youtube svg {
+    margin-top: 15px;
+}
+
 
 .button-to-popup:hover,
 .book-button:hover {
@@ -181,11 +184,6 @@ a {
 .social a:focus {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
-}
-.twitter:focus,
-.fb:focus,
-.youtube:focus {
-    background: rgba(0, 0, 0, 0.1);
 }
 
 .list-sort a {
@@ -358,6 +356,7 @@ ul {
 
 /*формы*/
 .form-search input {
+    box-sizing: border-box;
     background-color: #f2f2f2;
     font-weight: 700;
     font-family: inherit;
@@ -630,7 +629,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
 }
 
 .date-in label {
@@ -644,16 +643,17 @@ footer {
 }
 
 .input-date-in input {
-    width: 300px;
+    width: 348px;
     height: 36px;
     margin: 0;
     padding-left: 16px;
+    padding-right: 30px;
     padding-right: 30px;
     position: relative;
 }
 
 .input-date-out input {
-    width: 300px;
+    width: 348px;
     height: 36px;
     margin: 0;
     padding-left: 16px;
@@ -734,6 +734,20 @@ footer {
     cursor: pointer;
 }
 
+.smaller-men:hover,
+.bigger-men:hover,
+.smaller-children:hover,
+.bigger-children:hover {
+    color: #000000;
+}
+
+.smaller-men:focus,
+.bigger-men:focus,
+.smaller-children:focus,
+.bigger-children:focus {
+    color: #81b3d2;
+}
+
 .container-popup-humans {
     display: flex;
     width: 458px;
@@ -780,6 +794,7 @@ footer {
 }
 
 .first-reason h2 {
+    line-height: 21px;
     margin: 0;
     margin-bottom: 23px;
     padding-right: 40px;
@@ -806,6 +821,7 @@ footer {
 }
 
 .second-reason h2 {
+    line-height: 21px;
     margin-bottom: 20px;
     text-align: center;
 
@@ -867,6 +883,7 @@ footer {
 }
 
 .list-benefits h2 {
+    line-height: 21px;
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
@@ -897,6 +914,7 @@ footer {
 }
 
 .third-reason h2 {
+    line-height: 21px;
     text-align: center;
     margin-bottom: 21px;
 }
@@ -917,6 +935,7 @@ footer {
 }
 
 .fourth-reason h2 {
+    line-height: 21px;
     text-align: center;
     margin-bottom: 21px;
 }
@@ -937,6 +956,7 @@ footer {
 }
 
 .fifth-reason h2 {
+    line-height: 21px;
     text-align: center;
     margin-bottom: 21px;
 }
