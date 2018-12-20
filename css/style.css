@@ -1,18 +1,14 @@
 /*глобальные*/
 body {
-    margin: 0;
-
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #333333;
     text-transform: uppercase;
-    
     background-color: #ffffff; 
 }
 
 header {
-    margin: 0;
     font-weight: 700;
     min-height: 56px;
 }
@@ -135,15 +131,15 @@ a {
     text-align: center;
 }
 
-.twitter:focus,
-.fb:focus,
-.youtube:focus {
+.twitter:active,
+.fb:active,
+.youtube:active {
     background-color: #5496bd;
 }
 
-.twitter:focus svg,
-.fb:focus svg,
-.youtube:focus svg {
+.twitter:active svg,
+.fb:active svg,
+.youtube:active svg {
     opacity: 0.7 
 }
 
@@ -154,34 +150,39 @@ a {
 
 
 .fb svg {
-    margin-top: 12px;
+    margin-top: 14px;
 }
 
 .youtube svg {
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 
 .button-to-popup:hover,
-.book-button:hover {
+.book-button:hover,
+.button-to-popup:focus,
+.book-button:focus {
     background-color: #604e43;
 }
 
-.button-to-popup:focus,
-.book-button:focus {
+.button-to-popup:active,
+.book-button:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .more-information-button:hover,
 .find-button:hover,
-.social a:hover {
-    background-color: #669ec0;
-}
-
+.social a:hover,
 .more-information-button:focus,
 .find-button:focus,
 .social a:focus {
+    background-color: #669ec0;
+}
+
+.more-information-button:active,
+.find-button:active,
+.social a:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -191,15 +192,17 @@ a {
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
     border-bottom: dotted 1px #81b3d2;
+    outline: none;
 }
-.list-sort a:hover {
+.list-sort a:hover,
+.list-sort a:focus {
     display: inline-block;
     color: #81b3d2;
     background-color: #ffffff;
     border-bottom: dotted 1px #81b3d2;
 }
 
-.list-sort a:focus {
+.list-sort a:active {
     color: #000000;
     background-color: #ffffff;
 }
@@ -225,18 +228,26 @@ a {
 }
 
 .academy-logo:hover path {
-    fill: #81b3d2;
+    fill: ;
 }
 
 .academy-logo:focus path {
-    fill: #bdbbbc;
-}
-
-.academy-logo:hover rect {
     fill: #81b3d2;
 }
 
+.academy-logo:active path {
+    fill: #bdbbbc
+}
+
+.academy-logo:hover rect {
+    fill: ;
+}
+
 .academy-logo:focus rect {
+    fill: #81b3d2;
+}
+
+.academy-logo:active rect {
     fill: #bdbbbc;
 }
 
@@ -295,7 +306,6 @@ ul {
 }
 
 .slogan {
-    background-color: #ffffff;
     display: block;
     margin: 0;
     padding-left: 370px;
@@ -307,7 +317,6 @@ ul {
 
 .lead {
     background-color: #ffffff;
-    display: block;
     padding-left: 355px;
     padding-right: 355px;
     margin: 0;
@@ -429,7 +438,6 @@ ul {
 footer {
     min-height: 120px;
     opacity: 0.9;
-    margin-top: 78px;
     display: flex;
     padding-left: 132px;
     padding-right: 100px;
@@ -451,9 +459,7 @@ footer {
 
 .hashtag {
     width: 136px;
-    margin: 0;
     margin-top: 46px;
-    padding: 0;
     margin-right: 257px;
 }
 
@@ -462,7 +468,6 @@ footer {
     width: 150px;
     justify-content: space-between;
     margin-top: 36px;
-    padding: 0;
     margin-right: 228px;
 }
 
@@ -470,9 +475,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 200px;
-    margin: 0;
     margin-top: 45px;
-    padding: 0;
     margin-right: 0;
 }
 
@@ -483,7 +486,6 @@ footer {
 .intresting {
     display: flex;
     position: relative;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column; 
@@ -503,7 +505,6 @@ footer {
 }
 
 .image-hotel {
-    margin: 0;
     margin-right: 30px;
     width: 135px;
     height: 90px;
@@ -514,8 +515,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 258px;
-    margin: 0;    
-    padding: 0;
 }
 
 .info-spans {
@@ -525,8 +524,7 @@ footer {
 
 .info-spans span {
     width: 117px;
-    margin: 0;
-    padding: 0;    
+    margin: 0;   
 }
 
 .type-price {
@@ -536,8 +534,6 @@ footer {
 .rating-container {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     margin-left: auto;
     padding-top: 5px;
 }
@@ -551,13 +547,11 @@ footer {
     line-height: 21px;
     color: #666666;
     width: 83px;
-    margin: 0;
 }
 
 .hotels-buttons {
     display: flex;
     margin: 0;
-    padding: 0;
 }
 
 .stars {
@@ -573,7 +567,6 @@ footer {
     padding-left: 72px;
     padding-right: 73px;
     padding-bottom: 27px;
-    margin: 0;
 }
 
 .list-hotels li:first-child {
@@ -593,7 +586,6 @@ footer {
 
 .name-of-the-hotels h2{
     margin: 0;
-    padding: 0;
     font-size: 21px;
     line-height: 26px;
 }
@@ -603,16 +595,12 @@ footer {
 }
 
 /*Попап сетка*/
-.button-to-popup {
-    margin: 0;
-}
 
 .popup {
     position: absolute;
     left: 316px;
     top: 291px;
     display: flex;
-    margin: 0;
     min-height: 395px;
     width: 568px;
     background-color: #ffffff;
@@ -628,7 +616,6 @@ footer {
 .date-out {
     display: flex;
     justify-content: space-between;
-    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -645,9 +632,7 @@ footer {
 .input-date-in input {
     width: 348px;
     height: 36px;
-    margin: 0;
     padding-left: 16px;
-    padding-right: 30px;
     padding-right: 30px;
     position: relative;
 }
@@ -655,7 +640,6 @@ footer {
 .input-date-out input {
     width: 348px;
     height: 36px;
-    margin: 0;
     padding-left: 16px;
     padding-right: 30px;
     position: relative;
@@ -692,7 +676,6 @@ footer {
 .inputs-count-humans {
     display: flex;
     width: 458px;
-    margin: 0;
     align-items: center;
     padding: 0;
     justify-content: space-between;
@@ -704,16 +687,13 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 114px;
-    margin: 0;
 }
 
 .input-count-men input,
 .input-count-children input {
     width: 38px;
     height: 38px;
-    margin: 0;
     border: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -730,7 +710,6 @@ footer {
     font-size: 26px;
     font-weight: 700;
     color: #a9a9a9;
-    margin: 0;
     cursor: pointer;
 }
 
@@ -814,7 +793,7 @@ footer {
 .second-reason div {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 47px;
     align-items: center;
     padding-left: 48px;
     padding-right: 48px;
@@ -822,9 +801,9 @@ footer {
 
 .second-reason h2 {
     line-height: 21px;
+    margin: 0;
     margin-bottom: 20px;
     text-align: center;
-
 }
 
 .second-reason span {
@@ -847,7 +826,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-top: 160px;
-    margin: 0;
     padding-bottom: 80px;
 }
 
@@ -904,7 +882,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 47px;
 }
 
 .third-reason {
@@ -916,14 +894,16 @@ footer {
 .third-reason h2 {
     line-height: 21px;
     text-align: center;
+    margin: 0;
     margin-bottom: 21px;
 }
 
 .third-reason span {
-    margin-bottom: 11px;
+    margin-bottom: 25px;
 }
 
 .third-reason p {
+    margin: 0;
     line-height: 21px;
     text-align: center;
 }
@@ -937,14 +917,16 @@ footer {
 .fourth-reason h2 {
     line-height: 21px;
     text-align: center;
+    margin: 0;
     margin-bottom: 21px;
 }
 
 .fourth-reason span {
-    margin-bottom: 11px;
+    margin-bottom: 25px;
 }
 
 .fourth-reason p {
+    margin: 0;
     line-height: 21px;
     text-align: center;
 }
@@ -958,16 +940,18 @@ footer {
 .fifth-reason h2 {
     line-height: 21px;
     text-align: center;
+    margin: 0;
     margin-bottom: 21px;
 }
 
 .fifth-reason span {
-    margin-bottom: 11px;
+    margin-bottom: 25px;
 }
 
 .fifth-reason p {
     line-height: 21px;
     text-align: center;
+    margin: 0;
 }
 
 /*сетки небазовых частей hotels*/
@@ -998,7 +982,6 @@ footer {
 }
 
 .types-hotels {
-    margin: 0;
     padding: 0;
     display: flex;
     width: 255px;
@@ -1009,7 +992,6 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    margin: 0;
     margin-bottom: 27px;
 }
 
@@ -1017,17 +999,25 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    margin: 0;
     margin-bottom: 9px;
 }
 
-.hotels-cost label {
+.min-cost {
     display: inline-block;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
     width: 90px;
-    padding-left: 65px;
+    padding-left: 64px;
+}
+
+.max-cost {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    width: 90px;
+    padding-left: 57px;
 }
 
 .hotels-cost input {
@@ -1035,26 +1025,67 @@ footer {
     border: none;
     color: #ffffff;
     width: 50px;
-    margin: 0;
     font: inherit;
+    margin-left: 5px;
 }
 
-.border {
-    height: 36px;
+.border-to-costs {
+    height: 33px;
     display:flex;
     border: 2px solid #ffffff;
     border-radius: 2px;
     margin-bottom: 20px;
     font-size: 0;
     position: relative;
+    width: 314px;
 }
 
-.border::after {
+.border-to-costs::after {
     content: "";
     position: absolute;
     width: 2px;
     height: 22px;
     background-color: #ffffff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+,controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.scale {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 33px;
+}
+
+.controls .bar {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.ring {
+    position: absolute;
+    top: 161px;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.ring-max {
+    left: 83.5%;
+}
+
+.ring:hover {
+    border: 9px solid #ffffff;
 }
 
 .hotels-cost {
@@ -1065,7 +1096,7 @@ footer {
     display: flex;
 }
 
-.border div {
+.border-to-costs div {
     display: flex;
     align-items: center;
     width: 157px;
@@ -1075,7 +1106,6 @@ footer {
 font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
-    color: #333333;
     text-transform: uppercase;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -1115,7 +1145,7 @@ font-family: "PT Sans", Arial, sans-serif;
     margin: 0;
     margin-right: 39px;
     font-size: 12px;
-    padding-top: 7px;
+    padding-top: 5px;
 }
 
 .list-sort {
@@ -1141,6 +1171,7 @@ font-family: "PT Sans", Arial, sans-serif;
     padding: 0;
     width: 12px;
     background-color: transparent;
+    outline: none;
 }
 
 .up-button polygon,
@@ -1149,12 +1180,14 @@ font-family: "PT Sans", Arial, sans-serif;
 }
 
 .up-button polygon:hover,
-.down-button polyline:hover {
+.down-button polyline:hover,
+.up-button polygon:focus,
+.down-button polyline:focus {
     fill: #000000;
 }
 
-.up-button polygon:focus,
-.down-button polyline:focus {
+.up-button polygon:active,
+.down-button polyline:active {
     fill: #81b3d2;
 }
 
@@ -1174,3 +1207,34 @@ font-family: "PT Sans", Arial, sans-serif;
     height: 58px;
     margin-top: -57px;
 }
+
+/* чекбоксы*/
+
+.infrastructure label,
+.types-hotels label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.infrastructure:disabled input,
+.types-hotels:disabled input {
+/*    color: #6a6a6a; */
+}
+
+.infrastructure input[type="checkbox"] + .checkbox-indicator,
+.types-hotels input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+}
+
+.infrastructure input[type="checkbox"]:checked + .checkbox-indicator,
+.types-hotels input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url(../img/checkbox-on.svg);
+}
+  
