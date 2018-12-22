@@ -228,7 +228,7 @@ a {
 }
 
 .academy-logo:hover path {
-    fill: ;
+    fill: #81b3d2;
 }
 
 .academy-logo:focus path {
@@ -240,7 +240,7 @@ a {
 }
 
 .academy-logo:hover rect {
-    fill: ;
+    fill: #81b3d2;
 }
 
 .academy-logo:focus rect {
@@ -339,6 +339,7 @@ ul {
     color: #000000;
     margin: 0;
     margin-bottom: 46px;
+    background-color: #ffffff;
 }
 
 .intresting b {
@@ -493,10 +494,12 @@ footer {
     background-color: #ffffff;
     text-align: center;
     padding-top: 49px;
+    z-index: 0;
 }
 
 .intresting-question {
     margin-bottom: 25px;
+    background-color: #ffffff;
 }
 
 .list-hotels {
@@ -599,12 +602,63 @@ footer {
 .popup {
     position: absolute;
     left: 316px;
-    top: 291px;
+    top: 290px;
     display: flex;
     min-height: 395px;
     width: 568px;
     background-color: #ffffff;
+    display: none;
+    z-index: -1;
 }
+
+.popup-show {
+    position: absolute;
+    left: 316px;
+    top: 290px;
+    display: flex;
+    min-height: 395px;
+    width: 568px;
+    background-color: #ffffff;
+    animation-name: bounce;
+    animation-duration: 1.2s;
+    z-index: -1;
+}
+
+.popup-error {
+    animation: shake 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-395px);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+      transform: translateX(0);
+    }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+      transform: translateX(-10px);
+    }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 
 .form-search {
     display: flex;
@@ -872,8 +926,8 @@ footer {
     display: flex;
     background-color: #eeeeee;
     justify-content: space-between;
-    margin: 0;
     padding-bottom: 45px;
+    z-index: 0;
 }
 
 .third-reason,
@@ -1051,7 +1105,7 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-,controls {
+.controls {
     position: relative;
     margin-bottom: 32px;
 }
@@ -1070,7 +1124,7 @@ footer {
 
 .ring {
     position: absolute;
-    top: 161px;
+    top: -9px;
     width: 4px;
     height: 4px;
     background-color: #ababab;
@@ -1081,7 +1135,7 @@ footer {
 }
 
 .ring-max {
-    left: 83.5%;
+    left: 80%;
 }
 
 .ring:hover {
