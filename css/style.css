@@ -1251,7 +1251,7 @@ a {
     color: #ffffff;
     width: 50px;
     font: inherit;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .border-to-costs {
@@ -1408,7 +1408,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 7px;
+    padding-top: 5px;
 }
 
 .list-sort li {
@@ -1490,7 +1490,7 @@ a {
     cursor: pointer;
 }
 
-input[type="checkbox"] + label::before {
+.form-choosing input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
     top: -3px;
@@ -1501,7 +1501,7 @@ input[type="checkbox"] + label::before {
     height: 23px;
 }
 
-input[type="checkbox"]:checked + label::before {
+.form-choosing input[type="checkbox"]:checked + label::before {
     content: "";
     position: absolute;
     top: -3px;
@@ -1512,10 +1512,10 @@ input[type="checkbox"]:checked + label::before {
     height: 23px;
 }
 
-input[type="checkbox"]:disabled + label::before {
+.form-choosing input[type="checkbox"]:disabled + label::before {
     opacity: 0.3;
 }
 
-input[type="checkbox"]:focus + label::before {
+.form-choosing input[type="checkbox"]:focus + label::before {
     outline: 2px solid #5496bd;
 }
